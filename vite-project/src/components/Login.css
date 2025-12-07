@@ -1,0 +1,91 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 350px; /* slightly smaller form */
+  max-width: 90%;
+  padding: 30px; /* reduced padding */
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* equal spacing */
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+.form-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 26px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px 12px; /* smaller input height */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.form-container button {
+  width: 100%; /* same width for all buttons */
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-container button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.form-container .error {
+  color: #ff4d4f;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.form-container p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.form-container p a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-container p a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

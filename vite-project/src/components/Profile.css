@@ -1,0 +1,46 @@
+/* ====== Profile Container ====== */
+.profile-container {
+  /* margin-left: 250px;  */
+  /* leave space for fixed sidebar */
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  border-left: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Heading */
+.profile-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Profile Info */
+.profile-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+}
+
+.profile-container p strong {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .profile-container {
+    margin-left: 200px; /* smaller sidebar width */
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    margin-left: 0;
+    padding: 20px;
+    border-left: none;
+  }
+}
